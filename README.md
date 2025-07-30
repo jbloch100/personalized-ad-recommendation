@@ -17,3 +17,20 @@ python src/main.py
 ```bash
 python -m unittest tests/test_main.py
 ```
+
+## Docker
+
+### Build
+```bash
+docker build -t personalized-ad-recommendation .
+```
+
+### Run
+```bash
+docker run --rm personalized-ad-recommendation
+```
+
+### Test
+```bash
+docker run --rm personalized-ad-recommendation python -m unittest discover -s tests
+```
